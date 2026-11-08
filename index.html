@@ -89,7 +89,7 @@ th, td { border: 1px solid var(--trait); padding: .45rem .6rem; text-align: left
 <h2>Bilan de test</h2>
 <p>Pendant la phase de test, Profil › Test bêta permet de préparer un <strong>bilan anonyme</strong> (un identifiant aléatoire, les jours d'utilisation et des compteurs). Rien n'est envoyé automatiquement : c'est toi qui choisis de le partager, et avec qui.</p>
 <h2>Hébergement et sous-traitant</h2>
-<p>Les retours de correction et les statistiques sont reçus par <strong>Supabase</strong> (Supabase, Inc.), notre seul sous-traitant, dans un serveur situé <strong>dans l'Union européenne</strong> (Francfort, Allemagne). Un accord de traitement des données (DPA) nous lie à Supabase. Supabase est une société américaine : l'accord prévoit les clauses contractuelles types de la Commission européenne pour le cas où des données seraient accessibles depuis l'extérieur de l'Union.</p>
+<p>Les retours de correction et les statistiques sont reçus par <strong>Supabase</strong> (Supabase, Inc.), notre seul sous-traitant direct, dans un serveur situé <strong>dans l'Union européenne</strong> (Francfort, Allemagne). Un accord de traitement des données (DPA) nous lie à Supabase. Supabase est une société américaine : l'accord prévoit les clauses contractuelles types de la Commission européenne pour le cas où des données seraient accessibles depuis l'extérieur de l'Union. Supabase recourt elle-même à des prestataires (son hébergeur et un réseau de diffusion) dont elle publie la liste.</p>
 <p>Comme pour toute connexion à internet, le serveur voit l'<strong>adresse IP</strong> de ton téléphone au moment de l'envoi. Elle n'est pas enregistrée avec les retours ni avec les statistiques. Elle n'apparaît que dans les journaux techniques de Supabase.</p>
 <p>L'app n'utilise <strong>aucun</strong> service de publicité, de mesure ou de suivi tiers.</p>
 <h2>Durées de conservation</h2>
@@ -97,7 +97,7 @@ th, td { border: 1px solid var(--trait); padding: .45rem .6rem; text-align: left
 <thead><tr><th>Donnée</th><th>Durée</th></tr></thead>
 <tbody>
 <tr><td>Données sur ton téléphone</td><td>Jusqu'à ce que tu les supprimes ou que tu désinstalles l'app</td></tr>
-<tr><td>Retours de correction</td><td>Tant qu'ils servent à améliorer l'identification. Ils sont anonymes : rien ne les relie à toi</td></tr>
+<tr><td>Retours de correction</td><td>24 mois au plus après le mois de la capture, puis suppression automatique. Ils sont anonymes : rien ne les relie à toi</td></tr>
 <tr><td>Statistiques d'usage</td><td>25 mois au plus (suppression automatique chaque semaine)</td></tr>
 <tr><td>Identifiant de mesure (<code>install_hash</code>)</td><td>Renouvelé au bout de 13 mois</td></tr>
 <tr><td>Journaux techniques de Supabase (adresse IP)</td><td>Durée courte fixée par Supabase pour l'offre utilisée, quelques jours au plus</td></tr>
@@ -114,12 +114,13 @@ th, td { border: 1px solid var(--trait); padding: .45rem .6rem; text-align: left
 <li>Les données de ton Carnet sont <strong>sur ton téléphone</strong> : tu y accèdes, tu les exportes et tu les supprimes toi-même, sans nous.</li>
 <li><strong>Opposition</strong> : les deux réglages ci-dessus arrêtent les envois tout de suite.</li>
 <li>Les retours de correction ne portent aucun identifiant : nous ne pouvons pas retrouver ceux qui viennent de toi (article 11 du RGPD). Pour les statistiques, l'opposition efface l'identifiant de ce téléphone, ce qui coupe tout lien avec les envois passés.</li>
+<li>Fournir ces données est <strong>facultatif</strong> : l'app fonctionne de la même façon si tu refuses les deux envois. Aucune décision automatisée ne t'est appliquée.</li>
 <li><strong>Réclamation</strong> : tu peux saisir la CNIL, autorité française de protection des données, sur <a href="https://www.cnil.fr/fr/plaintes">cnil.fr/fr/plaintes</a>.</li>
 </ul>
 <h2>Âge</h2>
 <p>Le Carnet s'adresse aux personnes de <strong>15 ans et plus</strong>. Aucune donnée ne sert à profiler qui que ce soit.</p>
 <h2>Sur Android</h2>
-<p>L'app Android fonctionne comme l'app iPhone et suit cette même politique. Android demande les autorisations au moment où une fonction en a besoin, et tu peux les retirer dans les réglages du téléphone :</p>
+<p>L'app Android fonctionne comme l'app iPhone et suit cette même politique. Android demande les autorisations au moment où une fonction en a besoin, et tu peux les retirer dans les réglages du téléphone. Selon la version de l'app, certaines des autorisations ci-dessous ne sont pas encore demandées : l'app n'en demande jamais d'autres que celles-ci :</p>
 <ul>
 <li><strong>appareil photo</strong> et <strong>photothèque</strong> (photos que tu choisis, ou ta photothèque si tu lances « Fouiller mes photos ») ;</li>
 <li><strong>position approximative</strong> ou <strong>position précise</strong>, pour la Carte et ton secteur ; position « <strong>toujours</strong> », seulement si tu actives le réveil géographique ;</li>
