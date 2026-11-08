@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Carnet — Politique de confidentialité</title>
+<style>
+:root { --fond: #fbfaf6; --texte: #1d1d1b; --doux: #55534d; --trait: #d9d6cc; --lien: #1f5f8b; }
+@media (prefers-color-scheme: dark) {
+  :root { --fond: #161614; --texte: #ecebe6; --doux: #b5b3ab; --trait: #3a3935; --lien: #8cc4ec; }
+}
+body { margin: 0; background: var(--fond); color: var(--texte);
+       font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+h1 { font-size: 1.7rem; line-height: 1.25; }
+h2 { font-size: 1.25rem; margin-top: 2.2rem; border-top: 1px solid var(--trait); padding-top: 1.2rem; }
+em { color: var(--doux); }
+a { color: var(--lien); }
+code { font-size: .92em; background: var(--trait); padding: .05em .3em; border-radius: 4px; }
+.tableau { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--trait); padding: .45rem .6rem; text-align: left; vertical-align: top; }
+</style>
+</head>
+<body>
+<main>
+<h1>Le Carnet — Politique de confidentialité</h1>
+<p><em>Version v4 du 8 novembre 2026, pour l'application sur iPhone et sur Android. Elle remplace la version v3 du 14 octobre 2026. Nom de l'application provisoire.</em></p>
+<h2>En bref</h2>
+<ul>
+<li>Le Carnet fonctionne <strong>sans compte</strong> : il n'y a ni inscription, ni e-mail, ni mot de passe.</li>
+<li>Tes photos, tes identifications, ta collection et ta position restent <strong>sur ton téléphone</strong>. L'animal est reconnu par un modèle intégré à l'application, sans envoyer d'image.</li>
+<li>Deux envois anonymes nous aident, et <strong>tu peux refuser chacun d'eux</strong> dans les Réglages : les <strong>retours de correction</strong> (quand tu corriges un animal mal reconnu) et des <strong>statistiques d'usage</strong> (des compteurs, pour savoir si le jeu donne envie de revenir).</li>
+<li>Ces envois ne contiennent <strong>jamais</strong> de photo, de position exacte, de nom ou d'identifiant publicitaire. Ils sont hébergés dans l'Union européenne.</li>
+<li>Pas de publicité, pas de suivi publicitaire, aucune revente de données.</li>
+<li>Le Carnet s'adresse aux personnes de <strong>15 ans et plus</strong>.</li>
+</ul>
+<h2>Qui est responsable</h2>
+<p>Le responsable du traitement est l'éditeur du Carnet, une personne physique agissant à titre personnel.</p>
+<ul>
+<li>Nom : Mathieu Cheviron</li>
+<li>E-mail de contact, pour toute question ou pour exercer tes droits : mcheviron@proton.me</li>
+<li>Adresse postale : 84 Voie du Nord, 44617 Nantes</li>
+</ul>
+<h2>Ce qui reste sur ton téléphone</h2>
+<div class="tableau"><table>
+<thead><tr><th>Donnée ou accès</th><th>À quoi il sert</th><th>Où il reste</th></tr></thead>
+<tbody>
+<tr><td>Appareil photo</td><td>Photographier l'animal à identifier</td><td>Sur ton téléphone</td></tr>
+<tr><td>Photothèque</td><td>Identifier un animal sur une photo que tu choisis. Si tu l'acceptes, l'app parcourt aussi ta photothèque en arrière-plan pour y retrouver tes animaux (« Fouiller mes photos »)</td><td>Sur ton téléphone. Aucune photo n'est envoyée</td></tr>
+<tr><td>Position « pendant l'utilisation »</td><td>Afficher la Carte, situer tes captures, calculer la rareté locale, les Séries et les cibles de ton secteur</td><td>Sur ton téléphone, jamais envoyée</td></tr>
+<tr><td>Position « toujours » (facultative)</td><td>Te prévenir, quand tu reviens d'une sortie, que des photos d'animaux attendent d'être confirmées (réveil géographique)</td><td>Sur ton téléphone. L'historique de tes positions n'est jamais envoyé</td></tr>
+<tr><td>« Ma commune » (facultative)</td><td>Remplacer la position du téléphone par une commune que tu choisis</td><td>Sur ton téléphone</td></tr>
+<tr><td>Notifications (facultatives)</td><td>Bilan d'une sortie, saison d'une espèce qui commence</td><td>Programmées sur ton téléphone, sans serveur</td></tr>
+<tr><td>Tes cartes, fiches, planches, souvenirs écrits</td><td>Ta collection</td><td>Sur ton téléphone. Les photos sont ré-encodées <strong>sans métadonnées EXIF</strong> (dont la position GPS)</td></tr>
+</tbody></table></div>
+<p>Supprimer l'application supprime toutes ces données. Profil › Exporter mes données produit une copie de ton Carnet (sans les photos). Une capture se supprime depuis sa fiche.</p>
+<h2>Retours de correction</h2>
+<p>Quand tu dis à l'app qu'elle s'est trompée (« Ce n'est pas le bon animal », « Ce n'est pas un animal », choix de l'espèce quand l'animal n'est pas reconnu), elle peut envoyer un <strong>retour anonyme</strong> qui sert à améliorer l'identification. Le retour est mis en file sur ton téléphone et envoyé à l'ouverture suivante de l'app, jamais pendant une capture.</p>
+<div class="tableau"><table>
+<thead><tr><th>Champ envoyé</th><th>Exemple</th><th>Pourquoi</th></tr></thead>
+<tbody>
+<tr><td><code>model_version</code></td><td>version du modèle d'identification</td><td>relier l'erreur au modèle</td></tr>
+<tr><td><code>top5</code></td><td>les 5 espèces proposées, chacune avec une tranche de confiance (par exemple 60 à 70 %)</td><td>voir si la bonne espèce était proche</td></tr>
+<tr><td><code>chosen_rank</code></td><td>rang de l'espèce que tu as choisie dans la liste, ou vide</td><td>savoir si la liste suffisait</td></tr>
+<tr><td><code>corrected_taxon</code></td><td>l'espèce que tu as indiquée</td><td>la bonne réponse</td></tr>
+<tr><td><code>no_animal</code></td><td>« ce n'est pas un animal »</td><td>repérer les fausses détections</td></tr>
+<tr><td><code>final_kind</code></td><td>espèce, genre, famille ou non reconnu</td><td>repérer les erreurs de niveau</td></tr>
+<tr><td><code>source</code></td><td>viseur ou photothèque</td><td>comparer les deux</td></tr>
+<tr><td><code>month</code></td><td>mois de la capture (par exemple 2026-10)</td><td>saisonnalité</td></tr>
+<tr><td><code>cell_10km</code></td><td>maille d'environ 10 km ; <strong>aucune</strong> pour les espèces sensibles</td><td>répartition des confusions</td></tr>
+<tr><td><code>platform</code>, <code>app_version</code></td><td>iPhone ou Android, version de l'app</td><td>repérer une régression</td></tr>
+</tbody></table></div>
+<p>Le retour ne contient <strong>ni photo, ni position exacte, ni date précise, ni identifiant</strong> de toi ou de ton téléphone : deux retours ne peuvent pas être reliés entre eux. Le serveur n'y ajoute qu'un numéro de ligne tiré au hasard. <strong>Tu peux t'y opposer</strong> : Réglages › « Aider à améliorer l'identification ».</p>
+<h2>Statistiques d'usage</h2>
+<p>Pour savoir si le jeu donne envie de revenir (retour au bout de 15 et 30 jours, espèces trouvées la première semaine, Séries complétées), l'app envoie des <strong>statistiques d'usage</strong>, pour notre seul usage.</p>
+<p>Chaque envoi est une ligne qui contient <code>event_type</code>, <code>payload</code> et <code>install_hash</code>. Le serveur y ajoute la date de réception, sans l'heure (<code>received_day</code>).</p>
+<div class="tableau"><table>
+<thead><tr><th>Événement (<code>event_type</code>)</th><th>Contenu de <code>payload</code></th></tr></thead>
+<tbody>
+<tr><td>ouverture de l'app</td><td><code>day</code> : nombre de jours depuis l'installation</td></tr>
+<tr><td>capture enregistrée</td><td><code>day</code>, <code>kind</code> (niveau d'identification), <code>source</code> (viseur ou photothèque), <code>wild</code> (animal sauvage ou non), <code>newSpecies</code> (nouvelle pour ton Carnet ou non), <code>wildSpecies</code> (nombre d'espèces sauvages au Carnet)</td></tr>
+<tr><td>Série complétée</td><td><code>day</code></td></tr>
+<tr><td>correction faite</td><td><code>day</code>, <code>kind</code> (type de correction)</td></tr>
+<tr><td>modèle prêt</td><td><code>day</code>, <code>version</code> (version du modèle), <code>download_band</code> (durée de téléchargement par tranche)</td></tr>
+</tbody></table></div>
+<p><code>install_hash</code> est l'empreinte (hachage) d'un identifiant <strong>aléatoire</strong>, propre à cette mesure. Il est <strong>renouvelé au bout de 13 mois</strong> et n'est relié ni aux retours de correction, ni à aucun identifiant du téléphone ou publicitaire. Aucun nom d'espèce, aucune photo, aucune position. Les envois ont lieu à l'ouverture de l'app, jamais pendant une capture.</p>
+<p><strong>Tu peux t'y opposer à tout moment</strong> : Réglages › « Partager des statistiques d'usage ». L'opposition efface les statistiques en attente et l'identifiant de ce téléphone.</p>
+<h2>Bilan de test</h2>
+<p>Pendant la phase de test, Profil › Test bêta permet de préparer un <strong>bilan anonyme</strong> (un identifiant aléatoire, les jours d'utilisation et des compteurs). Rien n'est envoyé automatiquement : c'est toi qui choisis de le partager, et avec qui.</p>
+<h2>Hébergement et sous-traitant</h2>
+<p>Les retours de correction et les statistiques sont reçus par <strong>Supabase</strong> (Supabase, Inc.), notre seul sous-traitant, dans un serveur situé <strong>dans l'Union européenne</strong> (Francfort, Allemagne). Un accord de traitement des données (DPA) nous lie à Supabase. Supabase est une société américaine : l'accord prévoit les clauses contractuelles types de la Commission européenne pour le cas où des données seraient accessibles depuis l'extérieur de l'Union.</p>
+<p>Comme pour toute connexion à internet, le serveur voit l'<strong>adresse IP</strong> de ton téléphone au moment de l'envoi. Elle n'est pas enregistrée avec les retours ni avec les statistiques. Elle n'apparaît que dans les journaux techniques de Supabase.</p>
+<p>L'app n'utilise <strong>aucun</strong> service de publicité, de mesure ou de suivi tiers.</p>
+<h2>Durées de conservation</h2>
+<div class="tableau"><table>
+<thead><tr><th>Donnée</th><th>Durée</th></tr></thead>
+<tbody>
+<tr><td>Données sur ton téléphone</td><td>Jusqu'à ce que tu les supprimes ou que tu désinstalles l'app</td></tr>
+<tr><td>Retours de correction</td><td>Tant qu'ils servent à améliorer l'identification. Ils sont anonymes : rien ne les relie à toi</td></tr>
+<tr><td>Statistiques d'usage</td><td>25 mois au plus (suppression automatique chaque semaine)</td></tr>
+<tr><td>Identifiant de mesure (<code>install_hash</code>)</td><td>Renouvelé au bout de 13 mois</td></tr>
+<tr><td>Journaux techniques de Supabase (adresse IP)</td><td>Durée courte fixée par Supabase pour l'offre utilisée, quelques jours au plus</td></tr>
+</tbody></table></div>
+<h2>Bases légales</h2>
+<ul>
+<li><strong>Données sur ton téléphone</strong> : elles ne nous sont pas transmises. L'app y accède avec les autorisations que tu donnes au système (appareil photo, photothèque, position, notifications).</li>
+<li><strong>Retours de correction</strong> : notre <strong>intérêt légitime</strong> à améliorer l'identification des animaux (article 6.1.f du RGPD). Le retour est anonyme, et tu peux t'y opposer d'un geste.</li>
+<li><strong>Statistiques d'usage</strong> : mesure d'audience <strong>exemptée de consentement</strong> (article 82 de la loi Informatique et Libertés, lignes directrices de la CNIL), limitée à des statistiques pour l'éditeur. Elle repose sur notre intérêt légitime et tu peux t'y opposer d'un geste.</li>
+</ul>
+<h2>Tes droits</h2>
+<p>Tu disposes des droits d'accès, de rectification, d'effacement, de limitation et d'opposition, en écrivant à l'adresse de contact ci-dessus. Nous répondons sous un mois.</p>
+<ul>
+<li>Les données de ton Carnet sont <strong>sur ton téléphone</strong> : tu y accèdes, tu les exportes et tu les supprimes toi-même, sans nous.</li>
+<li><strong>Opposition</strong> : les deux réglages ci-dessus arrêtent les envois tout de suite.</li>
+<li>Les retours de correction ne portent aucun identifiant : nous ne pouvons pas retrouver ceux qui viennent de toi (article 11 du RGPD). Pour les statistiques, l'opposition efface l'identifiant de ce téléphone, ce qui coupe tout lien avec les envois passés.</li>
+<li><strong>Réclamation</strong> : tu peux saisir la CNIL, autorité française de protection des données, sur <a href="https://www.cnil.fr/fr/plaintes">cnil.fr/fr/plaintes</a>.</li>
+</ul>
+<h2>Âge</h2>
+<p>Le Carnet s'adresse aux personnes de <strong>15 ans et plus</strong>. Aucune donnée ne sert à profiler qui que ce soit.</p>
+<h2>Sur Android</h2>
+<p>L'app Android fonctionne comme l'app iPhone et suit cette même politique. Android demande les autorisations au moment où une fonction en a besoin, et tu peux les retirer dans les réglages du téléphone :</p>
+<ul>
+<li><strong>appareil photo</strong> et <strong>photothèque</strong> (photos que tu choisis, ou ta photothèque si tu lances « Fouiller mes photos ») ;</li>
+<li><strong>position approximative</strong> ou <strong>position précise</strong>, pour la Carte et ton secteur ; position « <strong>toujours</strong> », seulement si tu actives le réveil géographique ;</li>
+<li><strong>notifications</strong>, et le <strong>redémarrage</strong> du téléphone pour reprogrammer tes notifications après un redémarrage ;</li>
+<li>accès à <strong>internet</strong>, pour les seuls envois décrits plus haut.</li>
+</ul>
+<p>L'app Android n'utilise ni l'identifiant publicitaire, ni les services de mesure de Google.</p>
+<h2>Changements</h2>
+<p>Nous publierons toute nouvelle version de cette politique avec sa date et, si un changement touche ce qui est envoyé, l'app te le signalera avant tout nouvel envoi. Versions précédentes : v3 (14 octobre 2026, avec un compte facultatif et un autre prestataire de mesure, jamais mise en service).</p>
+</main>
+</body>
+</html>
